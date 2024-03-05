@@ -1,0 +1,447 @@
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/espacio.jpg");
+    background-size: cover;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    font-family: "Montserrat", sans-serif!important;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    position: fixed;
+}
+
+.cabecera{
+    background-color: rgba(255, 255, 255, 0.854);
+    display: flex;
+    justify-content: center;
+    height: 5%;
+    font-size: large;
+    color: black;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+textarea{
+    background: transparent;
+    height: 100%;
+    color: white;
+    resize: none;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+  border: 0 none;
+}
+
+.cuerpo
+{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 80%;
+}
+
+.area1{
+    height: 100%;
+    width: 80%; 
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.area2{
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+    margin: 10px;
+}
+
+.pie_pagina{
+  margin-top: 5%;
+    height: 9%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    justify-items: center;
+    align-items: center; 
+    justify-content: space-evenly;
+} 
+
+.limpiar{
+  background-color: blueviolet!important;
+  color: #fff;
+}
+
+.controles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton {
+    background-color: #04AA6D;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    max-width: 20%;
+    min-width: 15%;
+  }
+  .boton2 {
+    background-color: #04AA6D;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    max-width: 100%;
+    min-width: 15%;
+  }
+
+
+  .logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    justify-items: center;
+  }
+
+  .logos img{    
+    max-width: 20%; 
+    min-width: 15%;
+  }
+
+  .boton-encriptar{
+    
+    background-color: #04AA6D;
+  }
+  .boton-desencriptar{
+    
+    background-color: #9f2572;
+  }
+
+.caja-textarea{ 
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje-marciano{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+  .caja-alerta{
+    display: flex;
+    height: 1%;
+    padding: 15px;
+  }
+.alerta{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.marcianito-class{
+    width: 50%;
+}
+
+.codificador p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    height: 5%;
+}
+.area51{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 32%;
+}
+
+.area51-controles{
+    display: flex;
+    flex-flow: column;
+}
+
+.logo{
+    width: 100px;
+}
+
+.borde-animado { 
+
+    --border-width: 3px; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: white;
+    background: #222;
+    border-radius: var(--border-width);
+  
+    padding: 10px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+        60deg,
+        hsl(224, 85%, 66%),
+        hsl(269, 85%, 66%),
+        hsl(314, 85%, 66%),
+        hsl(359, 85%, 66%),
+        hsl(44, 85%, 66%),
+        hsl(89, 85%, 66%),
+        hsl(134, 85%, 66%),
+        hsl(179, 85%, 66%)
+      );
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: calc(2 * var(--border-width));
+      animation: moveGradient 4s alternate infinite;
+    }
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+
+
+  .borde-animado2 {
+    position: relative;
+    width: 91%;
+    height: 65%;
+    color: #fff;
+    background: #1e1e1e;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 49, 49, 0.5);
+    border-right: 1px solid rgba(0, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(57, 255, 20, 0.5);
+    border-left: 1px solid rgba(255, 255, 113, 0.5);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+  }
+
+  
+p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  span {
+    position: absolute;
+    border-radius: 100vmax;
+  }
+  
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(255, 49, 49, 0.5),
+      rgb(255, 49, 49)
+    );
+  }
+  
+  .bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      rgb(57, 255, 20),
+      rgba(57, 255, 20, 0.5),
+      transparent 50%
+    );
+  }
+  
+  .right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(0, 255, 255, 0.5),
+      rgb(0, 255, 255)
+    );
+  }
+  
+  .left {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      rgb(255, 255, 113),
+      rgba(255, 255, 113, 0.5),
+      transparent 70%
+    );
+  }
+  
+  .top {
+    animation: animateTop 3s ease-in-out infinite;
+  }
+  
+  .bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+  }
+  
+  .right {
+    animation: animateRight 3s ease-in-out infinite;
+  }
+  
+  .left {
+    animation: animateLeft 3s ease-in-out infinite;
+  }
+  
+  @keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    30%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateBottom {
+    0%,
+    50% {
+      opacity: 0;
+      width: 0;
+    }
+  
+    75% {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateRight {
+    0%,
+    25% {
+      opacity: 0;
+      height: 0;
+    }
+  
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+  
+    55%,
+    100% {
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateLeft {
+    0%,
+    75% {
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+  
+
+  @media  (max-width: 1027px) {
+    /* For desktop: */
+    .logo{
+        width: 60px;
+    }
+    .pie_pagina{
+        margin-top: 60%;
+    }
+    .area51{
+        margin-top: 20%;
+    }
+    .boton{
+        max-width: 26%;
+        min-width: 26%;
+    }
+    .cabecera{
+        margin-top: 60%;
+        height: fit-content;
+    }
+    .main{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .cuerpo{
+
+        display: flex;
+        flex-flow: column!important;
+        width: 100%;
+        height: 80%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .area1{
+        width: 100%;
+    }
+    .area2{
+        margin: 2%;
+        width: 80%;
+    }
+  }
